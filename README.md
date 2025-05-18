@@ -1,14 +1,12 @@
 # Tiny ESP32 Vector Database - teste_knn
 
-This repository demonstrates the integration and usage of the **knn-esp32-vector** component as a *tiny vector database* for ESP32, using the ESP-IDF framework. The example shows how to add vectors to a small database and query the nearest vector using the KNN (K-Nearest Neighbor) algorithm.
+That project demonstrates the integration and usage of the **knn-esp32-vector** component as a *tiny vector database* for ESP32, using the ESP-IDF framework. Add vectors to a small database and query the nearest vector using the KNN (K-Nearest Neighbor) algorithm.
 
 ---
 
 ## 📋 Description
 
 The **knn-esp32-vector** is a minimalist vector database for ESP32 microcontrollers. It allows storing fixed-dimension vectors (`VECT_DIM`) in RAM and efficiently performing vector queries based on Euclidean distance.
-
-This sample project (`teste_knn.c`) creates a database with 5 vectors, performs a query, and prints the ID of the nearest vector to the query.
 
 ---
 
