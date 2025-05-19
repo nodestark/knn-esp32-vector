@@ -35,7 +35,7 @@ The component provides the following functions in `knn_esp32_vector.h`:
 
 * `void add_vector(int id, const float *vector);`
 
-  * Adds a vector to the database, associating it with a unique identifier.
+  * Adds a vector to the database, associating it with a identifier.
 
 * `vector_entry_t *query_nn(const float *query);`
 
@@ -104,7 +104,4 @@ dependencies:
   knn-esp32-vector:
     git: "https://github.com/nodestark/knn-esp32-vector.git"
     version: "main"
-```
-
-```
 ```
