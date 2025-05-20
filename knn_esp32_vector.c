@@ -9,12 +9,27 @@
 
 vector_entry_t *vector_entry_db = (void*) 0;
 
-float euclidean_distance( float *a, float *b ){
+float cosine_distance( float *vctA, float *vctB ){
+
+	float mag_a = 0.00, mag_b = 0.00, dot = 0.00;
+
+	for(int x= 0; x < VECT_DIM; x++){
+
+		dot  += vctA[x] * vctB[x];
+
+		mag_a += vctA[x] * vctA[x];
+		mag_b += vctB[x] * vctB[x];
+	}
+
+	return dot / (sqrt(mag_a)*sqrt(mag_b));
+}
+
+float euclidean_distance( float *vctA, float *vctB ){
 
 	float soma = 0.00;
 
 	for(int x = 0; x < VECT_DIM; x++){
-		float diff = a[x] - b[x];
+		float diff = vctA[x] - vctB[x];
 
 		soma += (diff * diff);
 	}
